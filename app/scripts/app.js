@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 var app = angular
-  .module('elliecodesApp', ['ui.router']);
+  .module('womenOfCodeApp', ['ui.router']);
 
 app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
@@ -21,23 +21,16 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
   $urlRouterProvider.otherwise('/');
   //
-  // Now set up the states
   $stateProvider
-    .state('home', {
-      url: '/',
-      templateUrl: 'views/index.html'
-    });
+       .state('home', {
+        url: "/",
+        templateUrl: "views/home.html",
+        controller: 'MainCtrl'
+      })
+       .state('about', {
+        url: "/about",
+        templateUrl: "views/about.html",
+        controller: 'AboutCtrl'
+      })
 
-    for (i = 0; i < prepositions.length; i++) {
-	    $stateProvider.state(prepositions[i], {
-	      url: '/'+prepositions[i],
-	      templateUrl: 'views/'+prepositions[i]+'.html'
-	    });
-    }
-    for (i = 0; i < languages.length; i++) {
-	    $stateProvider.state('with.'+languages[i], {
-	      url: '/'+languages[i],
-	      templateUrl: 'views/with.'+languages[i]+'.html'
-	    });
-    }
 });

@@ -8,7 +8,7 @@
  * Controller of the elliecodesApp
  */
 angular.module('womenOfCodeApp')
-  .controller('MainCtrl', function ($scope, $http) {
+  .controller('AboutCtrl', function ($scope, $http) {
     $scope.name = "Akiko";
     $( ".thanks" ).hide();
     $scope.submitContact = function() {
