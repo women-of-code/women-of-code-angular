@@ -32,5 +32,10 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
         templateUrl: "views/about.html",
         controller: 'AboutCtrl'
       })
+        .state('dev', {
+        url: "/dev",
+        templateUrl: "views/dev.html",
+        controller: 'DevCtrl'
+      })
 
 });
