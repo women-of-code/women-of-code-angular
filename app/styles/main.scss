@@ -1,6 +1,6 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
-@import "bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
 /*Buttons*/
@@ -109,4 +109,12 @@ color: #a1e5d9 !important;
 .sub-nav-holder{
   border-right-style: solid;
 border-right-color: pink;
+}
+
+.about-bg{
+  background-image: url('../images/womenofcodehome.jpg');
+}
+
+body{
+  font-family: 'Lekton', sans-serif !important;
 }
