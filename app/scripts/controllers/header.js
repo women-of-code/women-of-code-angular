@@ -66,12 +66,12 @@ $('.masthead, .mastwrap').click(function(){
         $('.masthead').removeClass('revealed');
         //$('.mobile-toggle span').removeClass('white-color');
             
-                $('.sub-nav-holder').fadeOut('fast');
-                                $('.menu-panel').stop().animate({
-                                                    right: "3000px"
-                                                    }, 2000, function() {
-                                                    // Animation complete.
-                                                    });
+        $('.sub-nav-holder').fadeOut('fast');
+        $('.menu-panel').stop().animate({
+            right: "3000px"
+            }, 2000, function() {
+            // Animation complete.
+        });
 
 
 })
@@ -85,6 +85,20 @@ $('.masthead, .mastwrap').click(function(){
         var subnavIndex = $(this).attr('data-sub-nav-target');
         $('.sub-nav-'+subnavIndex).show();
     })
+
+    $('.sub-nav a').click(function(){
+        $('.main-nav').removeClass('open-nav');
+        $('.masthead').removeClass('revealed');
+        //$('.mobile-toggle span').removeClass('white-color');
+            
+        $('.sub-nav-holder').fadeOut('fast');
+        $('.menu-panel').stop().animate({
+            right: "3000px"
+            }, 2000, function() {
+            // Animation complete.
+        });
+    })
+
     //Navigation Sub Menu Triggering on click
     $('.trigger-sub-nav a').click(function(){
         $('.sub-nav').hide();

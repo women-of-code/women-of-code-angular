@@ -24,17 +24,28 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
   $stateProvider
        .state('home', {
         url: "/",
-        templateUrl: "views/home.html",
+        templateUrl: "/views/home.html",
         controller: 'MainCtrl'
       })
        .state('about', {
-        url: "/about",
-        templateUrl: "views/about.html",
+        url: "/about/",
+        abstract: true,
+        templateUrl: "/views/about/container.html",
+        controller: 'AboutCtrl'
+      })
+      .state('about.team', {
+        url: "team",
+        templateUrl: "/views/about/team.html",
+        controller: 'AboutCtrl'
+      })
+      .state('about.mission', {
+        url: "mission",
+        templateUrl: "/views/about/mission.html",
         controller: 'AboutCtrl'
       })
         .state('dev', {
         url: "/dev",
-        templateUrl: "views/dev.html",
+        templateUrl: "/views/dev.html",
         controller: 'DevCtrl'
       })
 
