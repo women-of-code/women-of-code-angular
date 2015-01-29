@@ -8,16 +8,13 @@
  * Controller of the elliecodesApp
  */
 angular.module('womenOfCodeApp')
-  .controller('AboutCtrl', function ($scope, $http, $rootScope) {
+  .controller('CommunityCtrl', function ($scope, $http, $rootScope) {
 
-    $scope.team = function(){
-        $rootScope.subAboutPage = "Team";
+    $scope.events = function(){
+        $rootScope.subAboutPage = "Events";
     };
-    $scope.mission = function(){
-        $rootScope.subAboutPage = "Mission";
-    };
-    $scope.contact = function(){
-        $rootScope.subAboutPage = "Contact";
+    $scope.membership = function(){
+        $rootScope.subAboutPage = "Membership";
     };
 
     $scope.init = function () {

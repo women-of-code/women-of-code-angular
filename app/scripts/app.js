@@ -43,6 +43,70 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
         templateUrl: "/views/about/mission.html",
         controller: 'AboutCtrl'
       })
+      .state('about.contact', {
+        url: "contact",
+        templateUrl: "/views/about/contact.html",
+        controller: 'AboutCtrl'
+      })
+      .state('work', {
+        url: "/work/",
+        abstract: true,
+        templateUrl: "/views/work/container.html",
+        controller: 'WorkCtrl'
+      })
+      .state('work.services', {
+        url: "services",
+        templateUrl: "/views/work/services.html",
+        controller: 'WorkCtrl'
+      })
+      .state('about.portfolio', {
+        url: "portfolio",
+        templateUrl: "/views/work/portfolio.html",
+        controller: 'WorkCtrl'
+      })
+      .state('about.process', {
+        url: "process",
+        templateUrl: "/views/work/process.html",
+        controller: 'WorkCtrl'
+      })
+       .state('education', {
+        url: "/education/",
+        abstract: true,
+        templateUrl: "/views/education/container.html",
+        controller: 'EducationCtrl'
+      })
+      .state('education.leap', {
+        url: "leap",
+        templateUrl: "/views/education/leap.html",
+        controller: 'EducationCtrl'
+      })
+      .state('education.classes', {
+        url: "classes",
+        templateUrl: "/views/education/classes.html",
+        controller: 'EducationCtrl'
+      })
+        .state('education.openCarriculum', {
+        url: "openCarriculum",
+        templateUrl: "/views/educations/openCarriculum.html",
+        controller: 'EducationCtrl'
+      })
+       .state('community', {
+        url: "/community/",
+        abstract: true,
+        templateUrl: "/views/community/container.html",
+        controller: 'CommunityCtrl'
+      })
+      .state('community.events', {
+        url: "events",
+        templateUrl: "/views/community/events.html",
+        controller: 'CommunityCtrl'
+      })
+      .state('community.membership', {
+        url: "membership",
+        templateUrl: "/views/community/membership.html",
+        controller: 'CommunityCtrl'
+      })
+    
         .state('dev', {
         url: "/dev",
         templateUrl: "/views/dev.html",

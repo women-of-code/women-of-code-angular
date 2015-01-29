@@ -8,16 +8,16 @@
  * Controller of the elliecodesApp
  */
 angular.module('womenOfCodeApp')
-  .controller('AboutCtrl', function ($scope, $http, $rootScope) {
+  .controller('EducationCtrl', function ($scope, $http, $rootScope) {
 
-    $scope.team = function(){
-        $rootScope.subAboutPage = "Team";
+    $scope.leap = function(){
+        $rootScope.subAboutPage = "Leap Program";
     };
-    $scope.mission = function(){
-        $rootScope.subAboutPage = "Mission";
+    $scope.classes = function(){
+        $rootScope.subAboutPage = "Classes";
     };
-    $scope.contact = function(){
-        $rootScope.subAboutPage = "Contact";
+    $scope.openCarriculum = function(){
+        $rootScope.subAboutPage = "Open Carriculum";
     };
 
     $scope.init = function () {
@@ -35,14 +35,6 @@ angular.module('womenOfCodeApp')
      $('.halfwidth').css('width',vW/2);
   
     $('.page-fold.subtle').next().css('margin-top',vH);
-
-    //Mobile Menu (multi level)
-    $('ul.slimmenu').slimmenu({
-        resizeWidth: '1200',
-        collapserTitle: 'menu',
-        easingEffect:'easeInOutQuint',
-        animSpeed:'medium',
-    });
 
 
   };

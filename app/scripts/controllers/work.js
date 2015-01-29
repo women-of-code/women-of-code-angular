@@ -8,16 +8,16 @@
  * Controller of the elliecodesApp
  */
 angular.module('womenOfCodeApp')
-  .controller('AboutCtrl', function ($scope, $http, $rootScope) {
+  .controller('WorkCtrl', function ($scope, $http, $rootScope) {
 
-    $scope.team = function(){
-        $rootScope.subAboutPage = "Team";
+    $scope.services = function(){
+        $rootScope.subAboutPage = "Services";
     };
-    $scope.mission = function(){
-        $rootScope.subAboutPage = "Mission";
+     $scope.portfolio = function(){
+        $rootScope.subAboutPage = "Portfolio";
     };
-    $scope.contact = function(){
-        $rootScope.subAboutPage = "Contact";
+     $scope.process = function(){
+        $rootScope.subAboutPage = "Process";
     };
 
     $scope.init = function () {
