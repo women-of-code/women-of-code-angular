@@ -16,7 +16,7 @@ angular.module('womenOfCodeApp')
     $scope.classes = function(){
         $rootScope.subAboutPage = "Classes";
     };
-    $scope.openCarriculum = function(){
+    $scope.opencarriculum = function(){
         $rootScope.subAboutPage = "Open Carriculum";
     };
 

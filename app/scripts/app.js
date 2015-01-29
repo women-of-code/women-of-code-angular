@@ -59,12 +59,12 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
         templateUrl: "/views/work/services.html",
         controller: 'WorkCtrl'
       })
-      .state('about.portfolio', {
+      .state('work.portfolio', {
         url: "portfolio",
         templateUrl: "/views/work/portfolio.html",
         controller: 'WorkCtrl'
       })
-      .state('about.process', {
+      .state('work.process', {
         url: "process",
         templateUrl: "/views/work/process.html",
         controller: 'WorkCtrl'
@@ -85,9 +85,9 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
         templateUrl: "/views/education/classes.html",
         controller: 'EducationCtrl'
       })
-        .state('education.openCarriculum', {
-        url: "openCarriculum",
-        templateUrl: "/views/educations/openCarriculum.html",
+        .state('education.opencarriculum', {
+        url: "opencarriculum",
+        templateUrl: "/views/education/opencarriculum.html",
         controller: 'EducationCtrl'
       })
        .state('community', {
@@ -106,8 +106,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
         templateUrl: "/views/community/membership.html",
         controller: 'CommunityCtrl'
       })
-    
-        .state('dev', {
+      .state('dev', {
         url: "/dev",
         templateUrl: "/views/dev.html",
         controller: 'DevCtrl'
