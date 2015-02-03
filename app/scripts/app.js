@@ -43,10 +43,10 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
         templateUrl: "/views/about/mission.html",
         controller: 'AboutCtrl'
       })
-        .state('dev', {
-        url: "/dev",
-        templateUrl: "/views/dev.html",
-        controller: 'DevCtrl'
+        .state('join', {
+        url: "/join",
+        templateUrl: "/views/join.html",
+        controller: 'JoinCtrl'
       })
 
 });

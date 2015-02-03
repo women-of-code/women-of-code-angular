@@ -1,0 +1,42 @@
+<div class="backgroundshadowing">
+</div>
+<div class="intro01-bg wallpaper">
+</div>
+
+<div class="row add-top-half">
+  <div class="col-md-8 col-md-offset-2"> 
+    <h1 class="minimal-caps font1 white add-top-quarter">Join #WomenOfCode</h1>
+      <h2 class="thanks">Thank you for joining. You will be contacted shortly.</h2>
+        <div id="contact-form-wrap">
+                  <div class="contact-item pad-common ">
+                    <div class="alert alert-error error color-bg " id="fname" style="display: none;">
+                      <p class="black">Name must not be empty</p>
+                    </div>
+                    <div class="alert alert-error  error color-bg" id="fmail" style="display: none;">
+                      <p class="black">Please provide a valid email</p>
+                    </div>
+                     <div class="alert alert-error  error color-bg" id="fmsg" style="display: none;">
+                       <p class="black">Message should not be empty</p>
+                     </div>
+                      <form name="myform" id="contactForm" ng-submit="submit()" ng-init="contactParams = {}"> 
+                        <article>
+                          <input type="text" ng-model="contactParams.first_name" placeholder="First Name" id="first_name" name="first_name" size="100" class="border-form">
+                        </article>
+                        <article>
+                          <input type="text" ng-model="contactParams.last_name" placeholder="Last Name" id="last_name" name="last_name" size="100" class="border-form">
+                        </article>
+                        <article>
+                           <input type="text" ng-model="contactParams.email" placeholder="Valid email address" name="email" id="email" size="30" class="border-form">
+                         </article>
+                         <article>
+                          <textarea ng-model="contactParams.message" placeholder="What are you looking to gain from this group?" name="message" cols="40" rows="8" id="msg" class="border-form"></textarea>
+                          <div class="add-top-quarter  text-center">
+                            <button class="btn btn-uber btn-uber-color" id="submit" name="submit" type="submit">Send Message</button>
+                          </div>
+                        </article>
+                     </form>
+                  </div>
+            </div>   
+          </div>
+
+      </div>

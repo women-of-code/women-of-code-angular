@@ -8,8 +8,23 @@
  * Controller of the elliecodesApp
  */
 angular.module('womenOfCodeApp')
-  .controller('DevCtrl', function ($scope, $http) {
-    $scope.name = "Akiko";
+  .controller('JoinCtrl', function ($scope, $http) {
+
+    $(".thanks").hide();
+
+    $scope.submit = function(){
+        $http.post('https://women-of-code.herokuapp.com/entries', $scope.contactParams).
+          success(function(data, status, headers, config) {
+            $(".thanks").show();
+            $("#contact-form-wrap").hide();
+          }).
+          error(function(data, status, headers, config) {
+            // called asynchronously if an error occurs
+            // or server returns response with an error status.
+          });
+
+    }
+
     $scope.init = function () {
 
      

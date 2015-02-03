@@ -162,7 +162,7 @@ body{
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: -2;
 }
 
 .background-team {
@@ -192,6 +192,25 @@ body{
 
 .team-cards{
   z-index:10;
+}
+
+input, textarea{
+  color:white !important;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    white;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    white;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    white;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    white;
 }
 
 
