@@ -13,11 +13,7 @@ var app = angular
 
 app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
-  $locationProvider.html5Mode(true);
-  //
-  var i = 0;
-  var languages =['ruby', 'javascript'];
-  var prepositions =['for', 'with'];
+  $locationProvider.html5Mode(false);
 
   $urlRouterProvider.otherwise('/');
   //
@@ -47,7 +43,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
         url: "/join",
         templateUrl: "/views/join.html",
         controller: 'JoinCtrl'
-      }
+      })
       .state('about.contact', {
         url: "contact",
         templateUrl: "/views/about/contact.html",
@@ -110,11 +106,5 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
         url: "membership",
         templateUrl: "/views/community/membership.html",
         controller: 'CommunityCtrl'
-      })
-      .state('dev', {
-        url: "/dev",
-        templateUrl: "/views/dev.html",
-        controller: 'DevCtrl'
-      })
-
+      });
 });
