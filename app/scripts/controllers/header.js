@@ -99,6 +99,11 @@ $('.masthead, .mastwrap').click(function(){
         });
     })
 
+    $("ul .black").click(function(){
+       $(".slimmenu").hide();
+
+    });
+
     //Navigation Sub Menu Triggering on click
     $('.trigger-sub-nav a').click(function(){
         $('.sub-nav').hide();
@@ -107,7 +112,7 @@ $('.masthead, .mastwrap').click(function(){
         $('.sub-nav-holder').show();
         var subnavIndex = $(this).attr('data-sub-nav-target');
         $('.sub-nav-'+subnavIndex).show();
-    })
+    });
 
 
   };

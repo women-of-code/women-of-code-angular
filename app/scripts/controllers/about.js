@@ -13,8 +13,11 @@ angular.module('womenOfCodeApp')
     $scope.team = function(){
         $rootScope.subAboutPage = "Team";
     };
-     $scope.mission = function(){
+    $scope.mission = function(){
         $rootScope.subAboutPage = "Mission";
+    };
+    $scope.contact = function(){
+        $rootScope.subAboutPage = "Contact";
     };
 
     $scope.init = function () {
