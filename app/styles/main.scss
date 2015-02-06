@@ -198,7 +198,7 @@ input, textarea{
   color:white !important;
 }
 
-:-webkit-input-placeholder { /* WebKit browsers */
+::-webkit-input-placeholder { /* WebKit browsers */
     color:    white;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
@@ -227,4 +227,8 @@ html{
 
 #mastwrap {
   height:100%;
+}
+
+.color-bg {
+  background-color: rgba(244,154,193, .7);
 }
