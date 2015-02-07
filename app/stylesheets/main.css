@@ -389,6 +389,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 
 .btn-uber-color{
 	border:solid 2px;
+  color: #ee71a9;
 	background: transparent;
 }
 .btn-uber-color:hover{

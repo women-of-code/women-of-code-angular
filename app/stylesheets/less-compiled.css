@@ -17,7 +17,7 @@
   color: #cccccc;
 }
 .color {
-  color: #ffc740;
+  color: #ee71a9;
 }
 .white-bg {
   background-color: #ffffff;
@@ -38,32 +38,32 @@
   background-color: #cccccc;
 }
 .color-bg {
-  background-color: #ffc740;
+  background-color: #ee71a9;
 }
 a {
   color: #191919;
 }
 a:hover {
-  color: #ffc740;
+  color: #ee71a9;
 }
 ::selection {
-  background-color: #ffc740;
+  background-color: #ee71a9;
   color: #ffffff;
 }
 ::-moz-selection {
-  background-color: #ffc740;
+  background-color: #ee71a9;
   color: #ffffff;
 }
 .btn-uber-color {
-  border-color: #ffc740;
-  color: #ffc740;
+  border-color: #ee71a9;
+  color: #ee71a9;
 }
 .btn-uber-color:hover {
   border-color: #191919;
   color: #191919;
 }
 .main-nav-menu li a.current-main-nav {
-  color: #ffc740 !important;
+  color: ##ee71a9 !important;
 }
 .main-nav-menu li a.main-nav-link:focus {
   color: #ffffff;
@@ -77,27 +77,27 @@ a:hover {
   color: #777777;
 }
 .sub-nav a:hover {
-  color: #ffc740;
+  color: #ee71a9;
 }
 .sub-nav a:after {
-  color: #ffc740;
+  color: #ee71a9;
 }
 .features-slider-triggers a {
-  border-color: #ffc740;
-  color: #ffc740;
+  border-color: #ee71a9;
+  color: #ee71a9;
 }
 .features-slider-triggers a.features-triggered {
   border-color: #ffffff;
   color: #ffffff;
 }
 .team-block h4 {
-  border-color: #ffc740;
+  border-color: #ee71a9;
 }
 .mastfoot .social-nav li a {
   color: #191919;
 }
 .mastfoot .social-nav li a:hover {
-  color: #ffc740;
+  color: #ee71a9;
 }
 #ws .price,
 #ws .price-specs {
@@ -108,10 +108,10 @@ a:hover {
 }
 .intro-05 h5 span,
 .intro-05 h1 span {
-  border-color: #ffc740;
+  border-color: #ee71a9;
 }
 .intro-08 .rotator-wrap span {
-  background-color: #ffc740;
+  background-color: #ee71a9;
   color: #ffffff;
 }
 .redirector a > i {
@@ -119,11 +119,11 @@ a:hover {
   color: #292929;
 }
 .redirector a:hover > i {
-  border-color: #ffc740;
-  color: #ffc740;
+  border-color: #ee71a9;
+  color: #ee71a9;
 }
 .tabbable-line > .nav-tabs > li.active {
-  border-color: #ffc740;
+  border-color: #ee71a9;
 }
 .tabbable-line > .nav-tabs > li:hover {
   border-color: #292929;
